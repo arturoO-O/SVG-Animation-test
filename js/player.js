@@ -219,7 +219,7 @@ class Player {
 
         if (this.velocity.magnitude >= 40) {
             const randomNum = Math.floor(Math.random()*4)+1;
-            this.elements.face.setAttribute("href", "/images/faces/hitwall"+randomNum+".png");
+            this.elements.face.setAttribute("href", "./images/faces/hitwall"+randomNum+".png");
             this.lastFaceTime = performance.now()/1000
         }
     }
@@ -262,9 +262,9 @@ class Player {
         }
 
         if (this.velocity.magnitude > 20) {
-            this.elements.face.setAttribute("href", "/images/faces/fast.png");
+            this.elements.face.setAttribute("href", "./images/faces/fast.png");
         } else {
-            this.elements.face.setAttribute("href", "/images/faces/normal.png");
+            this.elements.face.setAttribute("href", "./images/faces/normal.png");
         }
     }
 }
